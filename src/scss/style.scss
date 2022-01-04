@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    background-image: url(../images/Maskroup.svg), url(../images/image-cup.jpg);
+    background-repeat: no-repeat;
+    background-position: left, right;
+    height: 720px;
+    max-width: 1440px;
+}
