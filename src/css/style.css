@@ -11,12 +11,123 @@
           box-sizing: border-box;
 }
 
+a,
+a:visited {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
 header {
   background-color: black;
   background-image: url(../images/Maskroup.svg), url(../images/image-cup.jpg);
   background-repeat: no-repeat;
   background-position: left, right;
+  background-size: 40% auto, auto auto;
   height: 720px;
-  max-width: 1440px;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0px auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 0px 20px;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+}
+
+.navbar a:hover {
+  color: #ff4b32;
+  opacity: 1;
+}
+
+.navbar__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 30px;
+}
+
+.navbar__name {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: #ff4b32;
+  font-size: 24px;
+  line-height: 31px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.navbar__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  width: 730px;
+}
+
+.navbar__menu a {
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.tittle {
+  max-width: 525px;
+}
+
+.tittle span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160%;
+  color: #ffffff;
+  opacity: 0.6;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.tittle__name {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 58px;
+  line-height: 120%;
+}
+
+.tittle__button {
+  width: 150px;
+  height: 60px;
+  color: #ffffff;
+  background-color: #ff4b32;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 160%;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */

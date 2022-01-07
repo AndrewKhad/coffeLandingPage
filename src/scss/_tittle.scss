@@ -1,0 +1,28 @@
+.tittle {
+    max-width: 525px;
+    & span {
+        @include o600;
+        font-size: 20px;
+        line-height: 160%;
+        color: #ffffff;
+        opacity: 0.6;
+        display: block;
+        margin-bottom: 50px;
+    }
+    &__name {
+        @include j700;
+        color: #ffffff;
+        font-size: 58px;
+        line-height: 120%;
+    }
+    &__button {
+        width: 150px;
+        height: 60px;
+        color: #ffffff;
+        background-color: #ff4b32;
+        @include o600;
+        font-size: 18px;
+        line-height: 160%;
+        border-radius: 10px;
+    }
+}

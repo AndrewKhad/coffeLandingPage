@@ -9,11 +9,32 @@
     box-sizing: border-box;
 }
 
+a,
+a:visited {
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+
 header {
     background-color: black;
     background-image: url(../images/Maskroup.svg), url(../images/image-cup.jpg);
     background-repeat: no-repeat;
     background-position: left, right;
+    background-size: 40% auto, auto auto;
     height: 720px;
-    max-width: 1440px;
 }
+.container {
+    max-width: 1150px;
+    margin: 0px auto;
+    box-sizing: content-box;
+    padding: 0px 20px;
+}
+@import "fonts";
+@import "navbar";
+@import "tittle";
