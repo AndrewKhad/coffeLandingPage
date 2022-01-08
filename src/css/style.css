@@ -120,8 +120,7 @@ header {
 }
 
 .tittle__button {
-  width: 150px;
-  height: 60px;
+  padding: 16px 35px;
   color: #ffffff;
   background-color: #ff4b32;
   font-family: "Open Sans", sans-serif;
@@ -129,5 +128,78 @@ header {
   font-size: 18px;
   line-height: 160%;
   border-radius: 10px;
+}
+
+.gallery__tittle {
+  text-align: center;
+}
+
+.gallery__name {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  color: #000000;
+  font-size: 43px;
+  line-height: 130%;
+  padding: 20px 0 0 0;
+}
+
+.gallery__content {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+.gallery__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -15px;
+}
+
+.gallery__item {
+  padding: 50px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.3333%;
+          flex: 0 1 33.3333%;
+}
+
+.gallery__img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.gallery__img:first-child {
+  padding-bottom: 30px;
+}
+
+.gallery__link {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #ff4b32;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  border-top: 2px solid #0d0402;
+  border-bottom: 2px solid #0d0402;
+  padding: 15px 0;
+  max-width: 460px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
