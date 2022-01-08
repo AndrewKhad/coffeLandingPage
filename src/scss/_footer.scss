@@ -1,0 +1,57 @@
+.footer {
+    background-color: #0d0402;
+    background-image: url(../images/Maskroup.svg);
+    &__tittle {
+        @include o400;
+        color: #ffffff;
+        font-size: 24px;
+        line-height: 150%;
+        opacity: 0.7;
+        padding: 0 0 30px;
+    }
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        padding: 80px 0 40px;
+        border-bottom: 1px solid #ffffff;
+        margin: 0 -15px;
+    }
+    &__column {
+        flex: 0 1 25%;
+        padding: 0 15px;
+    }
+    &__item {
+        @include o400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #ffffff;
+        opacity: 0.7;
+        padding-bottom: 20px;
+        & a {
+            @include o400;
+            font-size: 18px;
+            line-height: 150%;
+            color: #ffffff;
+            &::before {
+                content: url(../images/Telephone.svg);
+                padding-right: 10px;
+                position: relative;
+                top: 5px;
+            }
+        }
+    }
+    &__end {
+        @include o400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #ffffff;
+        opacity: 0.7;
+        display: block;
+        padding: 25px 0 50px;
+        text-align: center;
+    }
+    &-logo {
+        margin-top: -15px;
+        padding-bottom: 22px;
+    }
+}

@@ -59,12 +59,14 @@
     }
 
     &__icons {
-        display: flex;
-        justify-content: space-between;
-        max-width: 320px;
         margin: 0 auto;
         padding: 0 0 100px 0;
+        max-width: 320px;
     }
+}
+.main-icons {
+    display: flex;
+    justify-content: space-between;
 }
 
 .twitter,
@@ -72,6 +74,4 @@
 .facebook,
 .linkedin {
     opacity: 1;
-    // box-shadow: 2px 2px 2px black;
-    // border-radius: 50%;
 }
