@@ -1,0 +1,77 @@
+.follow {
+    background: url(../images/u-3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    &__link {
+        & a {
+            @include o600;
+            color: #ff4b32;
+            font-size: 24px;
+            line-height: 150%;
+            border-bottom: 1px solid #ff4b32;
+            display: inline-block;
+            padding: 50px 0 0 0;
+            margin-bottom: 50px;
+            text-shadow: 3px 3px 2px black;
+        }
+    }
+    &__ask {
+        @include j600;
+        color: #ffffff;
+        font-size: 43px;
+        line-height: 130%;
+        text-align: center;
+        text-shadow: 3px 3px 2px black;
+        padding: 0 0 50px 0;
+    }
+
+    &__tel {
+        & a {
+            @include o400;
+            color: #ffffff;
+            font-size: 24px;
+            line-height: 150%;
+            text-shadow: 1px 1px 2px black;
+            display: inline-block;
+            padding: 0 0 10px 0;
+        }
+        &::before {
+            content: url(../images/Telephone.svg);
+            padding-right: 10px;
+        }
+    }
+    &__mail {
+        & a {
+            @include o400;
+            color: #ffffff;
+            font-size: 24px;
+            line-height: 150%;
+            text-align: center;
+            text-shadow: 1px 1px 2px black;
+            display: inline-block;
+            padding: 0 0 10px 0;
+            &::before {
+                content: url(../images/gmailloogo.svg);
+                padding-right: 10px;
+            }
+        }
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 0 0 100px 0;
+    }
+}
+
+.twitter,
+.instagram,
+.facebook,
+.linkedin {
+    opacity: 1;
+    // box-shadow: 2px 2px 2px black;
+    // border-radius: 50%;
+}
