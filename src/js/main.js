@@ -23,4 +23,21 @@ const swiper = new Swiper('.shop__swiper', {
     scrollbar: {
         el: '.swiper-scrollbar',
     },
+    breakpoints: {
+
+        300: {
+            slidesPerView: 1,
+            spaceBetween: 80
+        },
+
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 40
+        },
+
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        }
+    }
 });

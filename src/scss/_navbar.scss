@@ -28,9 +28,18 @@
         font-size: 18px;
         line-height: 160%;
         width: 730px;
+        @media (max-width: 767.98px) {
+            display: none;
+        }
         & a {
             color: #ffffff;
             opacity: 0.6;
         }
+    }
+}
+.burger-menu {
+    width: 100px;
+    @media (min-width: 767.98px) {
+        display: none;
     }
 }
