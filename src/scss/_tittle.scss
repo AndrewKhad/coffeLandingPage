@@ -17,6 +17,9 @@
         @media (max-width: 991.98px) {
             font-size: 42px;
         }
+        @media (max-width: 576px) {
+            font-size: 36px;
+        }
     }
     &__button {
         padding: 16px 35px;
@@ -26,5 +29,8 @@
         font-size: 18px;
         line-height: 160%;
         border-radius: 10px;
+        @media (max-width: 576px) {
+            font-size: 14px;
+        }
     }
 }

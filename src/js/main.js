@@ -41,3 +41,12 @@ const swiper = new Swiper('.shop__swiper', {
         }
     }
 });
+
+// ------Бургер------------------
+
+$(document).ready(function () {
+    $('.burger').click(function (event) {
+        $('.burger, .navbar__menu').toggleClass('active');
+
+    });
+});

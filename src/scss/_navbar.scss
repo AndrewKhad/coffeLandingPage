@@ -37,9 +37,61 @@
         }
     }
 }
-.burger-menu {
-    width: 100px;
-    @media (min-width: 767.98px) {
-        display: none;
+
+// ------Меню бургер----------------------
+
+.burger {
+    // margin конкретно для данного макета, для других не нужен:
+    margin: 15px 0 0 0;
+    // ----------------------------------------
+    display: none;
+    @media (max-width: 767px) {
+        display: block;
+        position: relative;
+        width: 60px;
+        height: 30px;
+        z-index: 10;
+    }
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: white;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        // ------transition задаем сюда, а не в active, чтобы работало в обратном порядке тоже
+        transition: 0.5s;
+    }
+    &::before {
+        top: 0;
+    }
+    &::after {
+        bottom: 0;
+    }
+    & span {
+        position: absolute;
+        background-color: white;
+        left: 0;
+        top: 14px;
+        width: 100%;
+        height: 2px;
+        transition: 0.5s;
+    }
+}
+
+// ----меняем бургер на крестик---------
+
+.burger.active {
+    &::before {
+        transform: rotate(45deg);
+        top: 14px;
+    }
+    &::after {
+        transform: rotate(-45deg);
+        bottom: 14px;
+    }
+    & span {
+        transform: scale(0);
     }
 }
