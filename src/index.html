@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!-- ----------style.css-------------- -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- ----------Swiper--------------- -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -52,13 +54,98 @@
         </div>
     </header>
 
+    <!-- -----------------shop---------------------------- -->
+    <div class="shop section">
+        <div class="container">
+            <div class="shop__header">
+                <div class="shop__tittle tittle-info">That is Our Best Offer</div>
+                <div class="shop__nav">
+                    <div class="swipen__prew">
+                        <img src="images/Vectorleft.svg" alt="">
+                    </div>
+                    <div class="swipen__next">
+                        <img src="images/Vectorright.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="shop__text">A coffee shop will help you to tell the audience what your <br> business.</div>
+            <!-- Slider main container -->
+            <div class="swiper shop__swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper shop__cards">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="shop__card">
+                            <div class="shop__image"><img src="images/imge1.jpg" alt=""></div>
+                            <div class="shop__info">
+                                <div class="shop__price">$
+                                    5.99</div>
+                                <div class="shop__name">Brazilian coffe beans</div>
+                                <div class="shop__description">Coffee that’s always you handle <br> your own the way you
+                                    like.
+                                </div>
+                                <div class="shop__box">
+                                    <div class="shop__value">
+                                    </div>
+                                    <a href="#" class="shop__button">Get Delivery</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shop__card">
+                            <div class="shop__image"><img src="images/Imge2.jpg" alt=""></div>
+                            <div class="shop__info">
+                                <div class="shop__price">$
+                                    4.99</div>
+                                <div class="shop__name">Vietnam coffe beans</div>
+                                <div class="shop__description">Coffee that’s always you handle <br> your own the way you
+                                    like.
+                                </div>
+                                <div class="shop__box">
+                                    <div class="shop__value">
+                                    </div>
+                                    <a href="#" class="shop__button">Get Delivery</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shop__card">
+                            <div class="shop__image"><img src="images/imge3.jpg" alt=""></div>
+                            <div class="shop__info">
+                                <div class="shop__price">$
+                                    3.99</div>
+                                <div class="shop__name">Indonesian coffe beans</div>
+                                <div class="shop__description">Coffee that’s always you handle <br> your own the way you
+                                    like.
+                                </div>
+                                <div class="shop__box">
+                                    <div class="shop__value">
+                                    </div>
+                                    <a href="#" class="shop__button">Get Delivery</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
     <!-- --------gallery--------------- -->
     <div class="gallery section">
         <div class="container">
             <div class="gallery__tittle">
                 <div class="gallery__name tittle-info">Our Gallery </div>
-                <div class="gallery__content">The coffee shop name generator is a great tool for those that are <br>
-                    deliberating what to call their new coffee.</div>
+                <div class="gallery__content">The coffee shop name generator is a great tool for those that are
+                    <br>
+                    deliberating what to call their new coffee.
+                </div>
             </div>
             <div class="gallery__images">
                 <div class="gallery__item">
@@ -123,9 +210,11 @@
         <div class="container">
             <div class="update__info">
                 <div class="update__name tittle-info">Update News</div>
-                <div class="update__text">A cup of brewed coffee represents a contribution of up to 1.8 grams of <br>
+                <div class="update__text">A cup of brewed coffee represents a contribution of up to 1.8 grams of
+                    <br>
                     fiber
-                    of the recommended.</div>
+                    of the recommended.
+                </div>
             </div>
             <div class="update__cards">
                 <div class="update__item">
@@ -134,7 +223,8 @@
                     </div>
                     <div class="update__card card">
                         <div class="card__name">Coffe beans</div>
-                        <div class="card__info">These advertising mottos are targeted to the 56% of coffee drinking
+                        <div class="card__info">These advertising mottos are targeted to the 56% of coffee
+                            drinking
                             consumers.</div>
                         <div class="card__button">
                             <a href="#">Learn More</a>
@@ -147,7 +237,8 @@
                     </div>
                     <div class="update__card card">
                         <div class="card__name">Coffe beans</div>
-                        <div class="card__info">These advertising mottos are targeted to the 56% of coffee drinking
+                        <div class="card__info">These advertising mottos are targeted to the 56% of coffee
+                            drinking
                             consumers.</div>
                         <div class="card__button">
                             <a href="#">Learn More</a>
@@ -160,7 +251,8 @@
                     </div>
                     <div class="update__card card">
                         <div class="card__name">Coffe beans</div>
-                        <div class="card__info">These advertising mottos are targeted to the 56% of coffee drinking
+                        <div class="card__info">These advertising mottos are targeted to the 56% of coffee
+                            drinking
                             consumers.</div>
                         <div class="card__button">
                             <a href="#">Learn More</a>
@@ -220,8 +312,10 @@
     </footer>
 
 
-
-
+    <!-- -------------------swiper---------------- -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- ------------js---------------------------- -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

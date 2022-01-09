@@ -1,0 +1,118 @@
+.shop {
+    &__cards {
+        padding: 0 0 100px;
+        display: flex;
+        min-width: 0;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__nav {
+        display: flex;
+        padding-top: 100px;
+    }
+    &__tittle {
+        padding-top: 100px;
+        display: inline;
+    }
+    &__text {
+        @include o400;
+        color: #000000;
+        font-size: 18px;
+        line-height: 160%;
+        opacity: 0.7;
+        margin: 0 0 60px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    &__image {
+        margin: 0 0 30px;
+        max-width: 300px;
+        height: 265px;
+    }
+
+    &__price {
+        @include j700;
+        color: #0c0d0c;
+        font-size: 24px;
+        line-height: 150%;
+        margin: 0 0 10px;
+    }
+
+    &__name {
+        @include j600;
+        color: #0c0d0c;
+        font-size: 32px;
+        line-height: 130%;
+        margin: 0 0 20px;
+    }
+
+    &__description {
+        flex: 1 1 auto;
+        @include o400;
+        color: #0c0d0c;
+        font-size: 16px;
+        line-height: 160%;
+        opacity: 0.6;
+        margin: 0 0 30px;
+    }
+    &__value {
+        width: 114px;
+        height: 57px;
+        border: 1px solid black;
+        display: block;
+        margin: 0 20px 0 0;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__button {
+        @include j700;
+        color: #ffffff;
+        font-size: 18px;
+        line-height: 150%;
+        flex: 1 1 auto;
+        text-align: center;
+        padding-top: 15px;
+        // padding: 15px 30px;
+        background-color: #ff4b32;
+        border-radius: 5px;
+    }
+}
+.swipen__prew {
+    width: 40px;
+    height: 40px;
+    background-color: #ff4b32;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    opacity: 0.6;
+    &:hover {
+        cursor: pointer;
+        opacity: 1;
+    }
+}
+.swipen__next {
+    width: 40px;
+    height: 40px;
+    background-color: #ff4b32;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.6;
+    &:hover {
+        cursor: pointer;
+        opacity: 1;
+    }
+}
