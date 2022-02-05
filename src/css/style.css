@@ -118,8 +118,8 @@ body.lock {
         -ms-flex-direction: column;
             flex-direction: column;
     font-size: 32px;
-    -webkit-transition: 1s;
-    transition: 1s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
     flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -161,6 +161,7 @@ body.lock {
 
 .burger::before, .burger::after {
   content: "";
+  opacity: 0.7;
   position: absolute;
   background-color: white;
   left: 0;
@@ -181,6 +182,7 @@ body.lock {
 .burger span {
   position: absolute;
   background-color: white;
+  opacity: 0.7;
   left: 0;
   top: 14px;
   width: 100%;
@@ -219,6 +221,12 @@ body.lock {
   opacity: 0.6;
   display: block;
   margin-bottom: 50px;
+}
+
+@media (max-width: 576px) {
+  .tittle span {
+    opacity: 1;
+  }
 }
 
 .tittle__name {
@@ -372,6 +380,13 @@ body.lock {
   text-align: center;
 }
 
+.follow__link:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+}
+
 .follow__link a {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -396,6 +411,13 @@ body.lock {
   padding: 0 0 50px 0;
 }
 
+.follow__tel:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+}
+
 .follow__tel a {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -410,6 +432,13 @@ body.lock {
 .follow__tel::before {
   content: url(../images/Telephone.svg);
   padding-right: 10px;
+}
+
+.follow__mail:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
 }
 
 .follow__mail a {
@@ -433,6 +462,13 @@ body.lock {
   margin: 0 auto;
   padding: 0 0 100px 0;
   max-width: 320px;
+}
+
+.follow__icons img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
 }
 
 .main-icons {
@@ -667,6 +703,13 @@ body.lock {
   padding-bottom: 20px;
 }
 
+.footer__item img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+}
+
 @media (max-width: 991.98px) {
   .footer__item {
     display: none;
@@ -837,6 +880,54 @@ body.lock {
   border: 1px solid black;
   display: block;
   margin: 0 20px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shop__number {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  color: #0c0d0c;
+  font-size: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  border-right: 1px solid black;
+}
+
+.shop__regular {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.shop__plus {
+  border-bottom: 1px solid black;
+  width: 100%;
+  text-align: center;
 }
 
 .shop__box {
@@ -869,6 +960,10 @@ body.lock {
   padding-top: 15px;
   background-color: #ff4b32;
   border-radius: 5px;
+}
+
+.shop__button:hover {
+  opacity: 0.7;
 }
 
 @media (max-width: 1199.98px) {

@@ -4,6 +4,10 @@
     background-position: center;
     text-align: center;
     &__link {
+        &:hover {
+            transform: scale(1.1);
+            transition-duration: 200ms;
+        }
         & a {
             @include o600;
             color: #ff4b32;
@@ -27,6 +31,10 @@
     }
 
     &__tel {
+        &:hover {
+            transform: scale(1.1);
+            transition-duration: 200ms;
+        }
         & a {
             @include o400;
             color: #ffffff;
@@ -42,6 +50,10 @@
         }
     }
     &__mail {
+        &:hover {
+            transform: scale(1.1);
+            transition-duration: 200ms;
+        }
         & a {
             @include o400;
             color: #ffffff;
@@ -62,6 +74,10 @@
         margin: 0 auto;
         padding: 0 0 100px 0;
         max-width: 320px;
+        & img:hover {
+            transform: scale(1.1);
+            transition-duration: 200ms;
+        }
     }
 }
 .main-icons {
