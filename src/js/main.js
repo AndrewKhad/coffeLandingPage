@@ -44,9 +44,12 @@ const swiper = new Swiper('.shop__swiper', {
 
 // ------Бургер------------------
 
-$(document).ready(function () {
-    $('.burger').click(function (event) {
-        $('.burger, .navbar__menu').toggleClass('active');
+let burgerMenu = document.querySelector('.burger');
+let menuMobile = document.querySelector('.navbar__menu');
 
-    });
-});
+burgerMenu.addEventListener('click', function () {
+    menuMobile.classList.toggle('active');
+    burgerMenu.classList.toggle('on');
+    // Чтобы body не скроллилось - для body.lock => overflow: hidden
+    document.body.classList.toggle('lock');
+})
